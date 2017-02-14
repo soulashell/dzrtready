@@ -8,28 +8,37 @@
       @font-face { font-family: TrueLies; src: url(TrueLies.ttf) }
 
       body {
-        background: url(bg.jpg) no-repeat;
-        background-size: cover
+        height: 100%;
+        margin: 0;
       }
-      p{
-        text-align: center;
-        font-size: 16vh;
-        transform: rotate(-30deg);
-        white-space: nowrap;
+
+      .background {
+        width: 100% !important;
+        height: 100% !important;
+
       }
-      #dzrtready {
+
+      .container {
+        width: 100%;
+        position: absolute;
+        margin-top: 8%;
+        margin-left: 10%;
+      }
+
+      .title {
         font-family: TrueLies;
-        margin-top: 15%;
-        margin-bottom: -16%;
-      }
-      #coming-soon {
-        margin-top: 20%;
-        font-family: Blackout;
+        font-size: 6rem;
+
       }
     </style>
   </head>
   <body>
-    <p id="dzrtready">DZRT READY</p>
-    <p id="coming-soon">Coming soon</p>
+    <div class="container">
+      <p class="title">DZRT-READY</p>
+    </div>
+    <video class="background" autoplay loop preload="none" poster="bg.jpg">
+      <source src="baja.mp4" type="video/mp4">
+      <source src="baja.webm" type="video/webm">
+    </video>
   </body>
 </html>
